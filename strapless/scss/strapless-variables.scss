@@ -130,7 +130,7 @@ $card-cap-bg:               rgba($black, .03) !default;
 $card-cap-color:            null !default;
 $card-height:               null !default;
 $card-color:                null !default;
-$card-bg:                   $white !default;
+$card-bg:                   inherit !default;
 $card-img-overlay-padding:  1.25rem !default;
 $card-group-margin:         $grid-gutter-width / 2 !default;
 $card-deck-margin:          $card-group-margin !default;
