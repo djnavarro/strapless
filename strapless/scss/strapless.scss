@@ -1,3 +1,9 @@
+// strapless is a subset of bootstrap 4.6 designed to
+// support the bs4cards package: it imports the bootstrap
+// grid, the cards system, and styling related to images.
+// as much as possible it avoids incorporating typography
+// or other features that might conflict with the visual
+// style of a distill site.
 
 @import "strapless-variables";
 @import "../../bootstrap-4.6.0/scss/mixins";
@@ -8,11 +14,4 @@
 @import "../../bootstrap-4.6.0/scss/utilities/flex";
 @import "../../bootstrap-4.6.0/scss/utilities/spacing";
 @import "../../bootstrap-4.6.0/scss/card";
-
-
-// possibly we can reduce mixins to these?
-//@import "bootstrap-4.6.0/scss/mixins/deprecate";
-//@import "bootstrap-4.6.0/scss/mixins/breakpoints";
-//@import "bootstrap-4.6.0/scss/mixins/grid-framework";
-//@import "bootstrap-4.6.0/scss/mixins/grid";
 
