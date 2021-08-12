@@ -1,0 +1,32 @@
+---
+title: "R markdown page with bootstrap 4"
+author: "Danielle J. Navarro"
+date: "12/08/2021"
+output: 
+  html_document:
+    theme:
+      version: 4
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Let's type some code
+
+```{r}
+library(bs4cards)
+my_cards <- list(
+  sample_card(margin = bs_mar(1)), 
+  sample_card(margin = bs_mar(1)), 
+  sample_card(margin = bs_mar(0)), 
+  sample_card(margin = bs_mar(0)), 
+  sample_card(margin = bs_mar(0))
+)
+```
+
+Type some more, and out should come the grid:
+
+```{r}
+card_grid(my_cards)
+```

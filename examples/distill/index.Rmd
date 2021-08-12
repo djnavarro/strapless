@@ -1,0 +1,34 @@
+---
+title: "Distill site with strapless"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+
+Let's type some code
+
+```{r}
+library(bs4cards)
+my_cards <- list(
+  sample_card(margin = bs_mar(1)), 
+  sample_card(margin = bs_mar(1)), 
+  sample_card(margin = bs_mar(0)), 
+  sample_card(margin = bs_mar(0)), 
+  sample_card(margin = bs_mar(0))
+)
+```
+
+Type some more, and out should come the grid:
+
+```{r}
+card_grid(my_cards)
+```
